@@ -1,0 +1,9 @@
+开发环境：Eclipse + JDK1.8 + Tomcat8.0
+
+访问地址： http://localhost:8080/SSM
+管理员用户名/密码:  admin/111111
+
+数据库连接配置请在(src\config\db.properties) 文件中更改
+数据库名称： mydb
+用户名：root
+密码：123456

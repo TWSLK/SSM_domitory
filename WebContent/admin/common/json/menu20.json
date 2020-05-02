@@ -1,0 +1,42 @@
+{
+	"status": 0,
+	"msg": "ok",
+	"data": [
+		{
+			"id": 11,
+			"name": "个人信息管理",
+			"icon": "",
+			"url": "../../admin/usera/update.jsp?seltype=gr"
+		}, {
+			"id": 32,
+			"name": "宿舍信息查询",
+			"icon": "",
+			"url": "../../admin/house/list.jsp"
+		}, {
+			"id": 32,
+			"name": "宿舍评分查询",
+			"icon": "",
+			"url": "../../admin/housepoint/list.jsp"
+		}, {
+			"id": 32,
+			"name": "缴费管理",
+			"icon": "",
+			"url": "../../admin/housepay/list.jsp"
+		}, {
+			"id": 32,
+			"name": "访客管理",
+			"icon": "",
+			"url": "../../admin/visitor/list.jsp"
+		}, {
+			"id": 31,
+			"name": "报修管理",
+			"icon": "",
+			"url": "../../admin/repair/list.jsp"
+		}, {
+			"id": 43,
+			"name": "修改密码",
+			"icon": "",
+			"url": "../../admin/user/updateMyPwd.jsp"
+		}
+	]
+}

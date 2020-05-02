@@ -1,0 +1,33 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mapper.SqlMapper">
+	<!-- 查询列表 -->
+	<select  id="getList" parameterType="java.lang.String"  resultType="java.util.Map">
+		${sql}
+	</select>
+	
+	<!-- 查询信息 -->
+	<select  id="getInfo" parameterType="java.lang.String"  resultType="java.util.Map">
+		${sql}
+	</select>
+	
+	<!-- 添加信息 -->
+	<select  id="add" parameterType="java.lang.String" >
+		${sql}
+	</select>
+	
+	<!-- 修改信息 -->
+	<select  id="update" parameterType="java.lang.String" >
+		${sql}
+	</select>
+	
+	<!-- 删除信息 -->
+	<select  id="del" parameterType="java.lang.String" >
+		${sql}
+	</select>
+	
+	<select  id="runSql" parameterType="java.lang.String" >
+		${sql}
+	</select>
+</mapper>

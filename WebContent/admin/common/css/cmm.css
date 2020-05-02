@@ -1,0 +1,43 @@
+@charset "UTF-8";/*!
+CSC私有css
+*/.mt-5{margin-top:5px}.mt-10{margin-top:10px}.mt-15{margin-top:15px}.mt-20{margin-top:20px}.mt-25{margin-top:25px}.mt-30{margin-top:30px}.mt-35{margin-top:35px}.mt-40{margin-top:40px}.mt-50{margin-top:50px}.mb-5{margin-bottom:5px}.mb-10{margin-bottom:10px}.mb-15{margin-bottom:15px}.mb-20{margin-bottom:20px}.mb-30{margin-bottom:30px}.mb-40{margin-bottom:40px}.mb-50{margin-bottom:50px}.ml-5{margin-left:5px}.ml-10{margin-left:10px}.ml-15{margin-left:15px}.ml-20{margin-left:20px}.ml-30{margin-left:30px}.ml-40{margin-left:40px}.ml-50{margin-left:50px}.mr-5{margin-right:5px}.mr-10{margin-right:10px}.mr-15{margin-right:15px}.mr-20{margin-right:20px}.mr-30{margin-right:30px}.mr-40{margin-right:40px}.mr-50{margin-right:50px}.pt-5{padding-top:5px}.pt-10{padding-top:10px}.pt-20{padding-top:20px}.pb-5{padding-bottom:5px}.pb-10{padding-bottom:10px}.pb-20{padding-bottom:20px}.pb-30{padding-bottom:30px}.pl-5{padding-left:5px}.pl-10{padding-left:10px}.pl-20{padding-left:20px}.pl-30{padding-left:30px}.pr-5{padding-right:5px}.pr-10{padding-right:10px}.pr-20{padding-right:20px}.pd-5{padding:5px}.pd-10{padding:10px}.pd-15{padding:15px}.pd-20{padding:20px}.pd-30{padding:30px}.pd-40{padding:40px}
+.wrapper,.wrapper-content{margin-top:1px;margin-left:5px;margin-right:5px;margin-bottom:1px;padding-top:1px;padding-left:5px;padding-right:5px;}
+.row{padding-right:5px;}
+.col-lg-1,.col-lg-10,.col-lg-11,.col-lg-12,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-md-1,.col-md-10,.col-md-11,.col-md-12,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-sm-1,.col-sm-10,.col-sm-11,.col-sm-12,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-xs-1,.col-xs-10,.col-xs-11,.col-xs-12,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9{padding-right:2px;padding-left:2px}
+.ibox-content{padding-left:10px;padding-right:5px;padding-top:5px;padding-bottom:5px;margin-bottom:5px;background-color: #fff;}
+.form-group{margin-bottom:5px}
+.player-controls button{padding:5px 5px;}
+.player-volume[type=range]{width:50px;margin:1px}
+.form-control{padding-bottom:5px;}
+body ,.form-control,.single-line{font-size: 12px;color: #222222;}
+body input{padding-bottom:2px;}
+.w-per-98{width:90%}
+/*修改开关默认样式*/
+.onoffswitch-inner:before{content:"是";padding-left:11px;background-color:#1AB394;color:#FFF}
+.onoffswitch-inner:after{content:"否";padding-right:11px;background-color:#FFF;color:#919191;text-align:right}
+/*修改radio为统一颜色*/
+.radio-success input[type="radio"] + label::after {background-color: #1AB394;}
+.radio-success input[type="radio"]:checked + label::before {border-color: #1AB394;}
+.radio-success input[type="radio"]:checked + label::after { background-color: #1AB394;}
+/*表格内容居中
+ui.jqgridffe4.css文件
+.ui-jqgrid .ui-jqgrid-htable thead th 样式66行增加： text-align: center;vertical-align: middle!important;
+*/
+.table-center td {text-align: center;vertical-align: middle!important;}
+.pd-0{padding-left: 0px;padding-right: 0px;}
+ /*上、右、下、左外边距*/
+ .merge-body{border-top:#e7eaec solid 1px; padding-bottom:8px;padding-top:8px;}
+ .merge-bottom{border-top:#e7eaec solid 1px;  padding-top:8px; }
+ .height-0{height:0px}
+ .left-0{margin-left:0px;padding-left:0px;}
+ .ibox-title{padding: 6px 15px 1px;min-height: 35px;}
+ .navbar-top-links li a{padding: 10px 10px;min-height: 30px;}
+ /* 分页表格内容居中 */
+ .table th, .table td {
+	text-align: center;
+	vertical-align: middle !important;
+}
+/* 富文本编辑器默认高度 */
+.ck-editor__editable { min-height: 200px; }
+
+.layui-upload-file {color: transparent; }

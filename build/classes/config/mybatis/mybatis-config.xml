@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "classpath:config/mybatis/mybatis-3-config.dtd">
+<configuration>
+    
+    <settings>
+        <setting name="useGeneratedKeys" value="true"/>
+    </settings>
+    <plugins>
+	    <!-- com.github.pagehelper为PageHelper类所在包名 -->
+	    <plugin interceptor="com.github.pagehelper.PageHelper">
+	        <property name="dialect" value="mysql"/>
+
+	        <!-- startPage-->
+	        <property name="offsetAsPageNum" value="true"/>
+
+	        <!-- 设置为true时，使用RowBounds分页会进行count查询 -->
+	        <property name="rowBoundsWithCount" value="true"/>
+	        <!-- 设置为true时，如果pageSize=0或者RowBounds.limit = 0就会查询出全部的结果 -->
+	        <!-- （相当于没有执行分页查询，但是返回结果仍然是Page类型）-->
+	        <property name="pageSizeZero" value="true"/>
+
+	        <property name="reasonable" value="false"/>
+	       
+	    </plugin>
+	</plugins>
+</configuration>

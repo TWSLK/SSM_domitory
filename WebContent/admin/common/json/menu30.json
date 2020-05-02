@@ -1,0 +1,22 @@
+{
+	"status": 0,
+	"msg": "ok",
+	"data": [
+		{
+			"id": 32,
+			"name": "宿舍信息管理",
+			"icon": "",
+			"url": "../../admin/house/list.jsp"
+		}, {
+			"id": 32,
+			"name": "宿舍评分管理",
+			"icon": "",
+			"url": "../../admin/housepoint/list.jsp"
+		}, {
+			"id": 43,
+			"name": "修改密码",
+			"icon": "",
+			"url": "../../admin/user/updateMyPwd.jsp"
+		}
+	]
+}

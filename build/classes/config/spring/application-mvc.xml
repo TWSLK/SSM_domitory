@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/mvc 
+        http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+        http://www.springframework.org/schema/context 
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/util 
+		http://www.springframework.org/schema/util/spring-util-4.0.xsd">
+    
+    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter" >
+	    <property name="messageConverters">
+	        <list>
+	            <bean class="org.springframework.http.converter.StringHttpMessageConverter">
+	                <property name="supportedMediaTypes">
+	                    <list>
+	                        <value>text/plain;charset=utf-8</value>
+	                        <value>text/html;charset=UTF-8</value>
+	                    </list>
+	                </property>
+	            </bean>
+	        </list>
+	    </property>
+	</bean>
+	<context:property-placeholder location="classpath:config/*.properties" />
+    <context:component-scan base-package="com.controller"></context:component-scan>
+    <mvc:annotation-driven></mvc:annotation-driven>
+	<mvc:resources location="/common/json/" mapping="/json/**"/>
+    <mvc:resources location="/common/extjs/" mapping="/extjs/**"/>
+    <mvc:resources location="/common/cmmjs/" mapping="/cmmjs/**"/>
+    <mvc:resources location="/common/lib/" mapping="/lib/**"/>
+    <mvc:resources location="/admin/" mapping="/admin/**"></mvc:resources>
+	<mvc:resources location="/index/" mapping="/index/**"></mvc:resources>
+	<!-- <mvc:resources location="/index_dingcan_10/" mapping="/index/**"></mvc:resources> -->
+<!-- 	<mvc:resources location="/index_kecheng_20/" mapping="/index/**"></mvc:resources>
+ -->	<mvc:resources location="/resource/" mapping="/resource/**"></mvc:resources>
+	<mvc:resources location="/upload/" mapping="/upload/**"></mvc:resources>
+    <bean class = "org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/"></property>
+        <property name="suffix" value=".jsp"></property>
+    </bean>
+
+    <!-- <mvc:resources location="/css/" mapping="/css/**"/>
+    <mvc:resources location="/js/" mapping="/js/**"/>
+    <mvc:resources location="/images/" mapping="/images/**"/>
+    <mvc:resources location="/WEB-INF/jsp/" mapping="/jsp/**"/> -->
+</beans>

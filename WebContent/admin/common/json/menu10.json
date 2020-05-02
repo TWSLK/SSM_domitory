@@ -1,0 +1,42 @@
+{
+	"status": 0,
+	"msg": "ok",
+	"data": [
+		{
+			"id": 32,
+			"name": "班级管理",
+			"icon": "",
+			"url": "../../admin/class/list.jsp"
+		}, {
+			"id": 11,
+			"name": "学生管理",
+			"icon": "",
+			"url": "../../admin/usera/list.jsp?utype=20"
+		}, {
+			"id": 32,
+			"name": "缴费管理",
+			"icon": "",
+			"url": "../../admin/housepay/list.jsp"
+		}, {
+			"id": 32,
+			"name": "访客管理",
+			"icon": "",
+			"url": "../../admin/visitor/list.jsp"
+		}, {
+			"id": 31,
+			"name": "报修管理",
+			"icon": "",
+			"url": "../../admin/repair/list.jsp"
+		}, {
+			"id": 41,
+			"name": "账号管理",
+			"icon": "",
+			"url": "../../admin/user/list.jsp"
+		},{
+			"id": 43,
+			"name": "修改密码",
+			"icon": "",
+			"url": "../../admin/user/updateMyPwd.jsp"
+		}
+	]
+}

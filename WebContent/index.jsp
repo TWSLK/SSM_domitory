@@ -1,0 +1,1 @@
+<script>window.location="./admin/index/index.html";</script>
